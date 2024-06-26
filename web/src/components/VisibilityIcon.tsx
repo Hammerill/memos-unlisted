@@ -16,6 +16,8 @@ const VisibilityIcon = (props: Props) => {
     VIcon = Icon.Users;
   } else if (visibility === Visibility.PUBLIC) {
     VIcon = Icon.Globe2;
+  } else if (visibility === Visibility.UNLISTED) {
+    VIcon = Icon.Link;
   }
   if (!VIcon) {
     return null;

@@ -31,7 +31,7 @@ export const useTagStore = create(
       const filters = [`row_status == "NORMAL"`];
       if (params.user) {
         if (params.location?.pathname === Routes.EXPLORE) {
-          filters.push(`visibilities == ["PUBLIC", "PROTECTED"]`);
+          filters.push(`visibilities == ["PUBLIC", "PROTECTED", "UNLISTED"]`);
         }
         filters.push(`creator == "${params.user.name}"`);
       } else {

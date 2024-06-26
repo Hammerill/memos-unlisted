@@ -17,6 +17,8 @@ const (
 	Public Visibility = "PUBLIC"
 	// Protected is the PROTECTED visibility.
 	Protected Visibility = "PROTECTED"
+	// Unlisted is the UNLISTED visibility.
+	Unlisted Visibility = "UNLISTED"
 	// Private is the PRIVATE visibility.
 	Private Visibility = "PRIVATE"
 )
@@ -27,6 +29,8 @@ func (v Visibility) String() string {
 		return "PUBLIC"
 	case Protected:
 		return "PROTECTED"
+	case Unlisted:
+		return "UNLISTED"
 	case Private:
 		return "PRIVATE"
 	}

@@ -117,6 +117,7 @@
       "disabled": "Les memos publics sont désactivés",
       "private": "Privé",
       "protected": "Accès aux membres",
+      "unlisted": "Accès par lien",
       "public": "Public"
     }
   },

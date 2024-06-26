@@ -32,7 +32,7 @@ const Explore = () => {
 
   const fetchMemos = async (nextPageToken: string) => {
     setIsRequesting(true);
-    const filters = [`row_status == "NORMAL"`, `visibilities == [${user ? "'PUBLIC', 'PROTECTED'" : "'PUBLIC'"}]`];
+    const filters = [`row_status == "NORMAL"`, `visibilities == [${user ? "'PUBLIC', 'PROTECTED', 'UNLISTED'" : "'PUBLIC'"}]`];
     const contentSearch: string[] = [];
     if (textQuery) {
       contentSearch.push(JSON.stringify(textQuery));

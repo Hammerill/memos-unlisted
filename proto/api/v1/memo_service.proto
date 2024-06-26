@@ -152,6 +152,7 @@ enum Visibility {
   PRIVATE = 1;
   PROTECTED = 2;
   PUBLIC = 3;
+  UNLISTED = 4;
 }
 
 message Memo {

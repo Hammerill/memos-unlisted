@@ -31,6 +31,7 @@ const (
 	Visibility_PRIVATE                Visibility = 1
 	Visibility_PROTECTED              Visibility = 2
 	Visibility_PUBLIC                 Visibility = 3
+	Visibility_UNLISTED               Visibility = 4
 )
 
 // Enum value maps for Visibility.
@@ -40,12 +41,14 @@ var (
 		1: "PRIVATE",
 		2: "PROTECTED",
 		3: "PUBLIC",
+		4: "UNLISTED",
 	}
 	Visibility_value = map[string]int32{
 		"VISIBILITY_UNSPECIFIED": 0,
 		"PRIVATE":                1,
 		"PROTECTED":              2,
 		"PUBLIC":                 3,
+		"UNLISTED":               4,
 	}
 )
 

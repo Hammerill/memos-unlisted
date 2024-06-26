@@ -6,6 +6,8 @@ export const convertVisibilityFromString = (visibility: string) => {
       return Visibility.PUBLIC;
     case "PROTECTED":
       return Visibility.PROTECTED;
+    case "UNLISTED":
+      return Visibility.UNLISTED;
     case "PRIVATE":
       return Visibility.PRIVATE;
     default:
@@ -19,6 +21,8 @@ export const convertVisibilityToString = (visibility: Visibility) => {
       return "PUBLIC";
     case Visibility.PROTECTED:
       return "PROTECTED";
+    case Visibility.UNLISTED:
+      return "UNLISTED";
     case Visibility.PRIVATE:
       return "PRIVATE";
     default:

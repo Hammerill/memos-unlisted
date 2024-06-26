@@ -114,6 +114,7 @@
       "disabled": "Public memos are disabled",
       "private": "Private",
       "protected": "Workspace",
+      "unlisted": "Unlisted",
       "public": "Public"
     },
     "links": "Links",

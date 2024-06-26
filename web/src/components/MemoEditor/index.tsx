@@ -432,7 +432,7 @@ const MemoEditor = (props: Props) => {
                 }
               }}
             >
-              {[Visibility.PRIVATE, Visibility.PROTECTED, Visibility.PUBLIC].map((item) => (
+              {[Visibility.PRIVATE, Visibility.PROTECTED, Visibility.UNLISTED, Visibility.PUBLIC].map((item) => (
                 <Option key={item} value={item} className="whitespace-nowrap">
                   {t(`memo.visibility.${convertVisibilityToString(item).toLowerCase()}` as any)}
                 </Option>

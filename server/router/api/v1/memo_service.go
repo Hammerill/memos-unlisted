@@ -883,6 +883,8 @@ func convertVisibilityFromStore(visibility store.Visibility) v1pb.Visibility {
 		return v1pb.Visibility_PRIVATE
 	case store.Protected:
 		return v1pb.Visibility_PROTECTED
+	case store.Unlisted:
+		return v1pb.Visibility_UNLISTED
 	case store.Public:
 		return v1pb.Visibility_PUBLIC
 	default:
@@ -896,6 +898,8 @@ func convertVisibilityToStore(visibility v1pb.Visibility) store.Visibility {
 		return store.Private
 	case v1pb.Visibility_PROTECTED:
 		return store.Protected
+	case v1pb.Visibility_UNLISTED:
+		return store.Unlisted
 	case v1pb.Visibility_PUBLIC:
 		return store.Public
 	default:

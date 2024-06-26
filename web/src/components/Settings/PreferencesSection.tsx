@@ -69,7 +69,7 @@ const PreferencesSection = () => {
             }
           }}
         >
-          {[Visibility.PRIVATE, Visibility.PROTECTED, Visibility.PUBLIC]
+          {[Visibility.PRIVATE, Visibility.PROTECTED, Visibility.UNLISTED, Visibility.PUBLIC]
             .map((v) => convertVisibilityToString(v))
             .map((item) => (
               <Option key={item} value={item} className="whitespace-nowrap">

@@ -104,6 +104,7 @@
       "disabled": "Public memos are disabled",
       "private": "Видимий тільки вам",
       "protected": "Видимий тільки користувачам",
+      "unlisted": "Видимий тим, хто має посилання",
       "public": "Видимий усім"
     }
   },
